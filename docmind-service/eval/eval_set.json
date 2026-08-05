@@ -1,0 +1,93 @@
+[
+  {
+    "id": "q1",
+    "query": "What BLEU score did the big Transformer model achieve on English-to-German translation?",
+    "expected_answer_contains": ["28.4"],
+    "expected_source_file": "1706.03762v7.pdf",
+    "category": "factual_single_doc"
+  },
+  {
+    "id": "q2",
+    "query": "What BLEU score did the Transformer achieve on English-to-French translation?",
+    "expected_answer_contains": ["41.0", "41.8"],
+    "expected_source_file": "1706.03762v7.pdf",
+    "category": "factual_single_doc"
+  },
+  {
+    "id": "q3",
+    "query": "How many GPUs were used to train the Transformer base model and for how long?",
+    "expected_answer_contains": ["8", "P100", "12 hours"],
+    "expected_source_file": "1706.03762v7.pdf",
+    "category": "factual_single_doc"
+  },
+  {
+    "id": "q4",
+    "query": "What optimizer did the Transformer paper use for training?",
+    "expected_answer_contains": ["Adam"],
+    "expected_source_file": "1706.03762v7.pdf",
+    "category": "factual_single_doc"
+  },
+  {
+    "id": "q5",
+    "query": "What was Apple's total net sales for fiscal year 2023?",
+    "expected_answer_contains": ["383.3", "383,285"],
+    "expected_source_file": "_10-K-Q4-2023-As-Filed.pdf",
+    "category": "factual_single_doc"
+  },
+  {
+    "id": "q6",
+    "query": "What was Apple's net income in fiscal year 2023?",
+    "expected_answer_contains": ["97.0", "96,995"],
+    "expected_source_file": "_10-K-Q4-2023-As-Filed.pdf",
+    "category": "factual_single_doc"
+  },
+  {
+    "id": "q7",
+    "query": "How much did Apple spend on share repurchases during fiscal year 2023?",
+    "expected_answer_contains": ["76.6"],
+    "expected_source_file": "_10-K-Q4-2023-As-Filed.pdf",
+    "category": "factual_single_doc"
+  },
+  {
+    "id": "q8",
+    "query": "What was Apple's total gross margin percentage in 2023?",
+    "expected_answer_contains": ["44.1"],
+    "expected_source_file": "_10-K-Q4-2023-As-Filed.pdf",
+    "category": "factual_single_doc"
+  },
+  {
+    "id": "q9",
+    "query": "What is retrieval-augmented generation used for?",
+    "expected_answer_contains": ["ground", "external", "retriev"],
+    "expected_source_file": "Retrieval-augmented_generation.pdf",
+    "category": "factual_single_doc"
+  },
+  {
+    "id": "q10",
+    "query": "What is the difference between dense and sparse vectors in RAG?",
+    "expected_answer_contains": ["dense", "sparse"],
+    "expected_source_file": "Retrieval-augmented_generation.pdf",
+    "category": "factual_single_doc"
+  },
+  {
+    "id": "q11",
+    "query": "What does this document say about the stock market crash of 1929?",
+    "expected_answer_contains": ["don't have", "not contain", "no information", "insufficient"],
+    "expected_source_file": null,
+    "category": "hallucination_guardrail"
+  },
+  {
+    "id": "q12",
+    "query": "What is Apple's plan for colonizing Mars?",
+    "expected_answer_contains": ["don't have", "not contain", "no information", "insufficient"],
+    "expected_source_file": null,
+    "category": "hallucination_guardrail"
+  },
+  {
+    "id": "q13",
+    "query": "Compare the topics covered across all the documents.",
+    "expected_answer_contains": ["10-K", "Apple", "transformer", "retrieval"],
+    "expected_source_file": null,
+    "category": "cross_document"
+  }
+]

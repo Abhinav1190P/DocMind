@@ -1,0 +1,145 @@
+[
+  {
+    "id": "q1",
+    "query": "What BLEU score did the big Transformer model achieve on English-to-German translation?",
+    "category": "factual_single_doc",
+    "answer": "The big Transformer model achieved a BLEU score of 28.4 on the WMT 2014 English-to-German translation task [1].",
+    "answer_correct": true,
+    "retrieval_hit": true,
+    "passed": true,
+    "latency_sec": 27.01,
+    "top_score": 9.6783
+  },
+  {
+    "id": "q2",
+    "query": "What BLEU score did the Transformer achieve on English-to-French translation?",
+    "category": "factual_single_doc",
+    "answer": "According to [1], the Transformer (big) model achieved a BLEU score of 41.0 on the WMT 2014 English-to-French translation task.",
+    "answer_correct": true,
+    "retrieval_hit": true,
+    "passed": true,
+    "latency_sec": 0.32,
+    "top_score": 9.1804
+  },
+  {
+    "id": "q3",
+    "query": "How many GPUs were used to train the Transformer base model and for how long?",
+    "category": "factual_single_doc",
+    "answer": "According to the provided context, the Transformer base model was trained on one machine with 8 NVIDIA P100 GPUs for a total of 100,000 steps or 12 hours [1].",
+    "answer_correct": true,
+    "retrieval_hit": true,
+    "passed": true,
+    "latency_sec": 0.38,
+    "top_score": 5.2553
+  },
+  {
+    "id": "q4",
+    "query": "What optimizer did the Transformer paper use for training?",
+    "category": "factual_single_doc",
+    "answer": "I don't have enough information in the provided documents to answer that.",
+    "answer_correct": false,
+    "retrieval_hit": true,
+    "passed": false,
+    "latency_sec": 0.36,
+    "top_score": -1.2284
+  },
+  {
+    "id": "q5",
+    "query": "What was Apple's total net sales for fiscal year 2023?",
+    "category": "factual_single_doc",
+    "answer": "According to [1], Apple's total net sales for fiscal year 2023 was $383,285 million.",
+    "answer_correct": true,
+    "retrieval_hit": true,
+    "passed": true,
+    "latency_sec": 0.34,
+    "top_score": 6.8026
+  },
+  {
+    "id": "q6",
+    "query": "What was Apple's net income in fiscal year 2023?",
+    "category": "factual_single_doc",
+    "answer": "According to the Consolidated Statements of Comprehensive Income in source [1], Apple's net income for the fiscal year 2023 was $96,995 million. [1]",
+    "answer_correct": true,
+    "retrieval_hit": true,
+    "passed": true,
+    "latency_sec": 0.29,
+    "top_score": 6.5053
+  },
+  {
+    "id": "q7",
+    "query": "How much did Apple spend on share repurchases during fiscal year 2023?",
+    "category": "factual_single_doc",
+    "answer": "According to source [1], Apple repurchased $76.6 billion of its common stock during 2023.",
+    "answer_correct": true,
+    "retrieval_hit": true,
+    "passed": true,
+    "latency_sec": 0.28,
+    "top_score": 7.4076
+  },
+  {
+    "id": "q8",
+    "query": "What was Apple's total gross margin percentage in 2023?",
+    "category": "factual_single_doc",
+    "answer": "According to the provided context, Apple's total gross margin percentage in 2023 was 44.1% [1].",
+    "answer_correct": true,
+    "retrieval_hit": true,
+    "passed": true,
+    "latency_sec": 0.38,
+    "top_score": 8.806
+  },
+  {
+    "id": "q9",
+    "query": "What is retrieval-augmented generation used for?",
+    "category": "factual_single_doc",
+    "answer": "Retrieval-augmented generation (RAG) is used in applications where generated responses need to be grounded in external or frequently updated information [1]. This includes grounding large language model outputs in external medical knowledge sources in the healthcare field [1].",
+    "answer_correct": true,
+    "retrieval_hit": true,
+    "passed": true,
+    "latency_sec": 0.37,
+    "top_score": 9.3485
+  },
+  {
+    "id": "q10",
+    "query": "What is the difference between dense and sparse vectors in RAG?",
+    "category": "factual_single_doc",
+    "answer": "According to the provided context, the difference between dense and sparse vectors in RAG is as follows:\n\n- Dense vectors encode the meaning of a word and are more compact, containing fewer zeros [1].\n- Sparse vectors, on the other hand, encode the identity of a word and are typically dictionary-length, containing mostly zeros [1].\n\nAdditionally, it is mentioned that sparse vectors are more computationally efficient for dot products compared to dense vector operations [2].",
+    "answer_correct": true,
+    "retrieval_hit": true,
+    "passed": true,
+    "latency_sec": 0.36,
+    "top_score": 7.7965
+  },
+  {
+    "id": "q11",
+    "query": "What does this document say about the stock market crash of 1929?",
+    "category": "hallucination_guardrail",
+    "answer": "I don't have enough information in the provided documents to answer that.",
+    "answer_correct": true,
+    "retrieval_hit": true,
+    "passed": true,
+    "latency_sec": 6.33,
+    "top_score": -8.5566
+  },
+  {
+    "id": "q12",
+    "query": "What is Apple's plan for colonizing Mars?",
+    "category": "hallucination_guardrail",
+    "answer": "I don't have enough information in the provided documents to answer that.",
+    "answer_correct": true,
+    "retrieval_hit": true,
+    "passed": true,
+    "latency_sec": 5.35,
+    "top_score": -9.1584
+  },
+  {
+    "id": "q13",
+    "query": "Compare the topics covered across all the documents.",
+    "category": "cross_document",
+    "answer": "Based on the provided context, the topics covered across the documents can be compared as follows:\n\nDocument [1] (Retrieval-augmented_generation.pdf) primarily discusses document retrieval and the use of vector embeddings to select relevant documents for augmenting user queries. The topics covered include:\n\n- Document retrieval\n- Vector embeddings\n- Indexing methods\n- Prompt engineering\n- LLM (Large Language Model)\n\nDocument [2] (Retrieval-augmented_generation.pdf) also focuses on document retrieval and discusses various methods for calculating similarities in vector stores. The topics covered include:\n\n- Vector similarity calculations\n- Dot products\n- Approximate nearest neighbor (ANN) searches\n- K-nearest neighbors (KNN) searches\n- Late Interactions\n\nDocument [3] (_10-K-Q4-2023-As-Filed.pdf) appears to be a financial report and discusses the financial condition, results of operations, and cash flows of a company. The topics covered include:\n\n- Financial statements\n- Disclosure controls\n- Financial condition\n- Results of operations\n- Cash flows\n\nThere is no overlap in topics between Document [3] and the other two documents, which focus on document retrieval and vector embeddings.",
+    "answer_correct": true,
+    "retrieval_hit": true,
+    "passed": true,
+    "latency_sec": 4.69,
+    "top_score": -8.1617
+  }
+]

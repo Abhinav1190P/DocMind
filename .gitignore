@@ -1,0 +1,25 @@
+# Environment variables - NEVER commit these
+.env
+.env.local
+*.env
+
+# Python
+docmind-service/venv/
+docmind-service/**/__pycache__/
+docmind-service/**/*.pyc
+docmind-service/.pytest_cache/
+
+# Node
+docmind-server/node_modules/
+docmind-client/node_modules/
+docmind-client/dist/
+docmind-server/dist/
+
+# Eval results (optional - you may want to keep these as evidence)
+docmind-service/eval/eval_results*.json
+
+# OS / editor junk
+.DS_Store
+*.log
+.vscode/
+.idea/
